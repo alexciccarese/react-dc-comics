@@ -7,7 +7,7 @@
 
 :root {
   --dc-primary: #0282f9;
-  --dc-grey: #707070;
+  --dc-grey: #303030;
 }
 
 body {
@@ -79,7 +79,7 @@ main {
 
   .content {
     background-color: black;
-    height: 40%;
+    height: 45%;
 
     .container {
       width: 70%;
@@ -95,7 +95,7 @@ main {
   .icons {
     background-color: var(--dc-primary);
     display: flex;
-    height: 10vh;
+    height: 55%;
     margin: auto;
 
     .container {
@@ -107,6 +107,34 @@ main {
       align-items: center;
       gap: 2rem;
       
+    }
+  }
+}
+
+footer {
+  position: relative;
+  background-image: url(../public/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+
+  .logo-bg {
+    position: absolute;
+    top: -5rem;
+    right: 15rem;
+  }
+
+  .credits {
+    background-color: var(--dc-grey);
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+
+    .container {
+      width: 70%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   }
 }

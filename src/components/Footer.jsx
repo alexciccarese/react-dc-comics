@@ -4,7 +4,11 @@ export default function Footer() {
   //template here
     return (
       <footer>
-        <h1>Footer here</h1>
+        <img className="logo-bg" src="/img/dc-logo-bg.png" alt="" />
+
+        <div className="credits">
+          <div className="container"></div>
+        </div>
       </footer>
     )
   }
