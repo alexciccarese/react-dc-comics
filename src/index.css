@@ -7,7 +7,7 @@
 
 :root {
   --dc-primary: #0282f9;
-  --dc-grey: #B1B2B5;
+  --dc-grey: #707070;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 
 
 header {
-  background-color: grey;
 
   .container {
     height: 120px;
@@ -72,4 +71,8 @@ header {
     }
   }
 
+}
+
+main {
+  
 }
