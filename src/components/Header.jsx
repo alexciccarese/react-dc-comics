@@ -4,7 +4,7 @@ export default function Header() {
     <header>
       <div className="container">
         <div>
-          <img src="/dc-logo.png" alt="" />
+          <img src="/dc-logo.png" alt="logo" />
         </div>
       </div>
     </header>
