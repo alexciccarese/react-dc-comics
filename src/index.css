@@ -74,5 +74,39 @@ header {
 }
 
 main {
-  
+  height: 25vh;
+
+
+  .content {
+    background-color: black;
+    height: 40%;
+
+    .container {
+      width: 70%;
+      height: 100%;
+      margin: auto;
+      color: white;
+      display: flex;
+      align-items: center;
+
+    }
+  }
+
+  .icons {
+    background-color: var(--dc-primary);
+    display: flex;
+    height: 10vh;
+    margin: auto;
+
+    .container {
+      width: 70%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      
+    }
+  }
 }
