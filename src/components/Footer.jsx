@@ -4,7 +4,6 @@ export default function Footer() {
   //template here
   return (
     <footer>
-      <img className="logo-bg" src="/img/dc-logo-bg.png" alt="" />
 
       <div className="info">
         <div className="container">

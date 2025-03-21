@@ -138,21 +138,20 @@ main {
 
 footer {
   position: relative;
-  background-image: url(../public/img/footer-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .logo-bg {
-    position: absolute;
-    top: -5rem;
-    right: 15rem;
-  }
+  background-image: 
+    url(../public/img/footer-bg.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
 
   .info {
+    background-image: url(../public/img/dc-logo-bg.png); /* Logo come sfondo */
+    background-repeat: no-repeat; /* Evita la ripetizione */
+    background-size: 50%; /* Aumenta la dimensione del logo */
+    background-position: right 0rem top -5rem; /* Sposta il logo più a destra e leggermente più in alto */
     width: 70%;
     margin: auto;
     display: flex;
-    justify-content: start;
 
     .container {
       width: 40%;
@@ -192,13 +191,12 @@ footer {
     background-color: var(--dc-grey);
     height: 120px;
     width: 100%;
-    position: absolute;
-    bottom: -60px;
 
     .container {
       width: 70%;
       padding-top: 2rem;
       padding-bottom: 2rem;
+      z-index: 8;
     }
   }
 }
