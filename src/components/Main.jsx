@@ -1,4 +1,5 @@
 import Icons from '../components/Icons'
+import CardList from './cardList'
 export default function Main() {
 
   return (
@@ -8,6 +9,12 @@ export default function Main() {
       <div className="content">
         <div className="container">
           <div className="title">CURRENT SERIES</div>
+
+
+          {/* inserire qui il componente della lista card */}
+          <CardList />
+
+
           <div className="btn">
             <button>LOAD MORE</button>
           </div>

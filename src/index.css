@@ -78,7 +78,7 @@ main {
   .jumbotron {
     background-image: url(../public/img/jumbotron.jpg);
     background-size: cover;
-    height: 30vh;
+    height: 400px;
   }
 
   .content {
@@ -248,4 +248,8 @@ footer {
       }
     }
   }
+}
+
+.card {
+  
 }
