@@ -1,3 +1,4 @@
+import Icons from '../components/Icons'
 export default function Main() {
 
   return (
@@ -8,9 +9,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="icons">
-        <div className="container"></div>
-      </div>
+      <Icons />
     </main>
   )
 }
