@@ -74,20 +74,43 @@ header {
 }
 
 main {
-  height: 25vh;
 
+  .jumbotron {
+    background-image: url(../public/img/jumbotron.jpg);
+    background-size: cover;
+    height: 30vh;
+  }
 
   .content {
     background-color: black;
-    height: 45%;
+    height: 50vh; /* to remove */
 
     .container {
+      position: relative;
       width: 70%;
       height: 100%;
       margin: auto;
       color: white;
       display: flex;
       align-items: center;
+      justify-content: center;
+
+      .title {
+        font-weight: 800;
+        background-color: var(--dc-primary);
+        padding: 1rem 2rem 1rem 2rem;
+        position: absolute;
+        top: -2rem;
+        left: 0;
+      }
+
+        button {
+          color: white;
+          background-color: var(--dc-primary);
+          padding: 0.5rem 3rem 0.5rem 3rem;
+          border: none;
+          font-weight: 600;
+        }
 
     }
   }
@@ -95,7 +118,7 @@ main {
   .icons {
     background-color: var(--dc-primary);
     display: flex;
-    height: 55%;
+    height: 150px;
     margin: auto;
 
     .container {
@@ -179,6 +202,7 @@ footer {
             font-weight: 600; 
 
             &:hover {
+              color: white;
               text-decoration: underline;
             }
           }

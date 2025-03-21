@@ -3,9 +3,14 @@ export default function Main() {
 
   return (
     <main>
+      <div className="jumbotron">
+      </div>
       <div className="content">
         <div className="container">
-          <h1>-- Content goes here --</h1>
+          <div className="title">CURRENT SERIES</div>
+          <div className="btn">
+            <button>LOAD MORE</button>
+          </div>
         </div>
       </div>
 
