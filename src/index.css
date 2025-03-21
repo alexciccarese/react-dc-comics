@@ -8,6 +8,7 @@
 :root {
   --dc-primary: #0282f9;
   --dc-grey: #303030;
+  --dc-light-grey: #797979;
 }
 
 body {
@@ -140,12 +141,51 @@ footer {
   background-image: url(../public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 35vh;
 
   .logo-bg {
     position: absolute;
     top: -5rem;
     right: 15rem;
+  }
+
+  .info {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+
+    .container {
+      width: 40%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .title {
+          color: white;
+          font-weight: 800;
+          padding-bottom: 1rem;
+        }
+
+        ul {
+          padding-top: 1rem;
+          line-height: 28px;
+          
+          a {
+            color: var(--dc-light-grey);
+            text-decoration: none;
+            font-weight: 600; 
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
   }
 
   .credits {
