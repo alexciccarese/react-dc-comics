@@ -67,6 +67,17 @@ export default function Footer() {
       <div className="credits">
         <div className="container">
           <div className="row">
+
+            <button>SING-UP NOW!</button>
+
+            <div className="social">
+              <h3>FOLLOW US</h3>
+              <img src="/img/footer-facebook.png" alt="" />
+              <img src="/img/footer-twitter.png" alt="" />
+              <img src="/img/footer-youtube.png" alt="" />
+              <img src="/img/footer-pinterest.png" alt="" />
+              <img src="/img/footer-periscope.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
