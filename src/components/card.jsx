@@ -2,10 +2,12 @@ export default function Card({ image, title }) {
 
   return (
     <>
-      <div className="col">
-        <div className="card">
-          <img width="300" src={image} alt="" />
-          <div>{title}</div>
+      <div className="card-col">
+        <div className="cardEl">
+          <div className="image-container">
+            <img className="card-image" src={image} alt={title} />
+          </div>
+          <div className="cardTitle">{title}</div>
         </div>
       </div>
     </>
