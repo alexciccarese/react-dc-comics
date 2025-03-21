@@ -29,7 +29,7 @@ header {
       ul {
         display: flex;
         justify-content: end;
-        gap: 1rem;
+        gap: 2rem;
         font-weight: 800;
         height: 120px;
         align-items: center;
@@ -57,7 +57,7 @@ header {
    
     a {
       text-decoration: none;
-      color: var(--dc-grey);
+      color: var(--dc-light-grey);
       font-size: 12px;
   
     }
