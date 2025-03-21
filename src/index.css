@@ -14,7 +14,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
 header {
 
   .container {
@@ -105,8 +104,33 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+
       
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          color: white;
+
+          .imgBox {
+            width: 40px;
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 100%;          
+              
+            }
+          }
+        }
+      }
     }
   }
 }
