@@ -1,5 +1,6 @@
 import Icons from '../components/Icons'
 import CardList from './cardList'
+import comics from './data/comics'
 export default function Main() {
 
   return (
@@ -12,7 +13,7 @@ export default function Main() {
 
 
           {/* inserire qui il componente della lista card */}
-          <CardList />
+          <CardList comics={comics} />
 
 
           <div className="btn">

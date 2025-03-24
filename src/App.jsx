@@ -4,13 +4,14 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import menuLink from './components/data/menuLink'
+import comics from './components/data/comics'
 
 function App() {
 
   return (
     <>
     <Header menuLink={menuLink} />
-    <Main />
+    <Main comics={comics} />
     <Footer />
     </>
   )
