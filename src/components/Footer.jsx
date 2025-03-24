@@ -1,5 +1,36 @@
-export default function Footer() {
+import dcComics from "../components/data/footerLink/DcComics";
+import shop from "../components/data/footerLink/shop";
+import dc from "../components/data/footerLink/dc";
+import sites from "../components/data/footerLink/sites";
+
+const {dcComics, shop, dc, sites} = footerLink 
+
+export default function Footer(footerLink) {
   // logica
+  const dcComicsLinks = dcComics.map((link) => (
+    <li key={link.id}>
+      <a href={link.url}>{link.name}</a>
+    </li>
+  ));
+
+  const shopLinks = shop.map((link) => (
+    <li key={link.id}>
+      <a href={link.url}>{link.name}</a>
+    </li>
+  ));
+
+  const dcLinks = dc.map((link) => (
+    <li key={link.id}>
+      <a href={link.url}>{link.name}</a>
+    </li>
+  ));
+
+  const sitesLinks = sites.map((link) => (
+    <li key={link.id}>
+      <a href={link.url}>{link.name}</a>
+    </li>
+  ));
+
 
   //template here
   return (
@@ -13,36 +44,20 @@ export default function Footer() {
 
               <ul>
                 <h3 className="title">DC COMICS</h3>
-                <li><a href="">Characters</a></li>
-                <li><a href="">Comics</a></li>
-                <li><a href="">Movies</a></li>
-                <li><a href="">TV</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">News</a></li>
+                {dcComicsLinks}
               </ul>
 
               <ul>
                 <h3 className="title">SHOP</h3>
-                <li><a href="">Shop DC</a></li>
-                <li><a href="">Shop DC Collectibles</a></li>
+                {shopLinks}
               </ul>
             </div>
 
             <div className="links">
 
               <ul>
-                <h3 className="title">DC</h3>
-                <li><a href="">Terms Of Use</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Ad Choices</a></li>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Subscriptions</a></li>
-                <li><a href="">Talent Workshops</a></li>
-                <li><a href="">CPSC Certificates</a></li>
-                <li><a href="">Ratings</a></li>
-                <li><a href="">Shop Help</a></li>
-                <li><a href="">Contact Us</a></li>
+              <h3 className="title">DC</h3>
+                {dcLinks}
               </ul>
 
             </div>
@@ -51,11 +66,7 @@ export default function Footer() {
 
               <ul>
                 <h3 className="title">SITES</h3>
-                <li><a href="">DC</a></li>
-                <li><a href="">MAD Magazine</a></li>
-                <li><a href="">DC Kids</a></li>
-                <li><a href="">DC Universe</a></li>
-                <li><a href="">DC Power Visa</a></li>
+                {sitesLinks}
               </ul>
 
             </div>
