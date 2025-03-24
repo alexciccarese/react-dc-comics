@@ -1,6 +1,6 @@
 import Nav from "../components/Nav"
 
-export default function Header() {
+export default function Header({menuLink}) {
 
   return (
     <header>
@@ -9,7 +9,7 @@ export default function Header() {
           <img src="/img/dc-logo.png" alt="logo" />
         </div>
 
-        <Nav />
+        <Nav menuLink={menuLink} />
       </div>
     </header>
 

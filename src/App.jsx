@@ -3,12 +3,13 @@ import viteLogo from '/vite.svg'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import menuLink from './components/data/menuLink'
 
 function App() {
 
   return (
     <>
-    <Header />
+    <Header menuLink={menuLink} />
     <Main />
     <Footer />
     </>
